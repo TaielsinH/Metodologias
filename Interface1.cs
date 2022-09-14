@@ -1,11 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Usuario
- * Date: 24/8/2022
- * Time: 9:51 a. m.
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
+﻿
 using System;
 using System.Collections.Generic;
 //no deberíamos modificar una interface
@@ -28,5 +21,6 @@ namespace Metodologías
 		bool contiene(Comparable c);
 	}
 
+	
 
 }
