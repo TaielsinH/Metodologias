@@ -58,12 +58,16 @@ namespace Metodologías
 		
 		public static void llenarAlumnos(Coleccionable col)
 		{
-			for (int i = 0; i<20; i++)
+			for (int i = 0; i<10; i++)
 			{
-				string n = nombreAzar();
-				int dni = dniAzar();
-				Comparable alumno = new Alumno(n, dni, legajoAzar(), promedioAzar());
+				Strategy comparador = new porNombre(); 
+				Comparable alumno = new Alumno(nombreAzar(), dniAzar(), legajoAzar(), promedioAzar());
+				Comparable alumno2;
 				col.agregar(alumno);
+				do{
+					alumno2 = new Alumno(nombreAzar(), dniAzar(), legajoAzar(), promedioAzar());
+				}while(comparador.esIgual(alumno, alumno2));
+				col.agregar(alumno2);
 			}
 		}
 		

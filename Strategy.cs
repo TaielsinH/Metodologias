@@ -51,5 +51,21 @@ namespace Metodologías
         {
             return ((Alumno)a).getLegajo > ((Alumno)b).getLegajo;
         }
-    }   
+    }
+    public class porPromedio : Strategy
+    {
+        public bool esIgual(Comparable a, Comparable b)
+        {
+            return ((Alumno)a).getPromedio == ((Alumno)b).getPromedio;
+        }
+        public bool esMenor(Comparable a, Comparable b)
+        {
+            return ((Alumno)a).getPromedio < ((Alumno)b).getPromedio;
+        }
+        public bool esMayor(Comparable a, Comparable b)
+        {
+            return ((Alumno)a).getPromedio > ((Alumno)b).getPromedio;
+        }
+    }
+       
 }
