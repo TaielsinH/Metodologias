@@ -8,14 +8,16 @@ namespace Metodologías
 	{
 		public static void Main(string[] args)
 		{
-			Pila p = new Pila();
-			Cola c = new Cola();
-			ColeccionMultiple multiple = new ColeccionMultiple(p, c);
-			
-			llenarAlumnos(p);
-			llenarAlumnos(c);
-			informar(multiple);
-			
+				Pila p = new Pila();
+				Cola c = new Cola();
+				ColeccionMultiple multiple = new ColeccionMultiple(p, c);
+
+				Conjunto el = new Conjunto();
+				llenarAlumnos(p);
+				llenarAlumnos(c);
+				informar(multiple);
+				
+
 			Console.ReadKey(true);
 			
 		}
